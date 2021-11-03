@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+/* body {
+  position: relative;
+} */
+h2 {
+  color: blue;
+  font-weight: 600;
+}
+h3 {
+  font-size: 17px;
+  margin: 0px;
+}
+
+.h-empty {
+  width: 10px;
+}
+
+.v-empty {
+  height: 25px;
+}
+
+.lable,
+a,
+#info {
+  font-size: 08px;
+  color: gray;
+  line-height: 12px;
+  margin: 0px;
+}
+
+span {
+  font-size: 11px;
+  color: rgb(67, 67, 226);
+  line-height: 12px;
+  margin: 0px;
+}
+
+.calcard {
+  min-width: 320px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 05px;
+  box-shadow: 1px 1px 2px gray;
+}
+
+/* section 1 */
+
+.card-s1-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.card-s1a,
+.card-s1b {
+  flex-basis: 50%;
+}
+
+.card-s1b input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid gray;
+  border-radius: 05px;
+  padding: 0px 05px;
+  box-sizing: border-box;
+}
+
+/* section 2 */
+
+.card-s2-flex {
+  border-top: 1px dotted gray;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s2a input {
+  width: 100%;
+  height: 45px;
+  border: 2px solid green;
+  border-radius: 05px;
+  padding: 0px 05px;
+  color: green;
+  box-sizing: border-box;
+}
+
+.s2a input :focus {
+  color: green;
+}
+
+.s2b input {
+  width: 100%;
+  height: 45px;
+  border: 2px solid red;
+  border-radius: 05px;
+  padding: 0px 05px;
+  color: red;
+  box-sizing: border-box;
+}
+
+.s2a input :focus {
+  color: red;
+}
+
+/* section 3 */
+
+select {
+  margin-bottom: 10px;
+}
+
+/* section 4 */
+
+.card-s4-info-flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted black;
+  padding-bottom: 08px;
+}
+
+.s4a {
+  flex-basis: 50%;
+}
+
+.s4b {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.s4b span {
+  font-size: 09px;
+  color: gray;
+  line-height: 12px;
+  margin: 0px;
+}
+
+/* section 5 */
+
+.card-s5-deatils-flex {
+  margin-top: 10px;
+}
+
+.deatils-flex {
+  display: flex;
+  padding: 06px;
+}
+
+.deatils-flex p {
+  font-size: 11px;
+}
+
+.deatils1 {
+  flex-basis: 50%;
+}
+
+.deatils2 {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+#total-fees-1 {
+  font-size: 14px;
+  color: gray;
+}
+
+#profit-with-fess {
+  font-size: 14px;
+  color: green;
+}
+
+#net-profit-1 {
+  font-size: 20px;
+  color: rgb(19, 197, 19);
+  font-weight: 600;
+}
+
+/* button reload */
+
+#reload img {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  border-radius: 51%;
+  box-shadow: 1px 1px 2px black;
+}
+
+/* footer */
+
+footer p,
+a {
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+
+@media screen and (max-width: 460px) {
+  .s2b input,
+  .s2a input {
+    width: 98%;
+  }
+
+  .calcard {
+    position: relative;
+    min-width: 320px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  #reload img {
+    position: fixed;
+    opacity: 0.7;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    border-radius: 51%;
+    box-shadow: 1px 1px 2px black;
+  }
+}

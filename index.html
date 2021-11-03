@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calcard">
+      <h2>Wazirx Profit Calculator</h2>
+
+      <div class="v-empty"></div>
+
+      <div class="card-s1-flex">
+        <div class="card-s1a">
+          <h3>BUY coins worth ₹</h3>
+          <p class="lable">
+            Enter how much money you want to put in ₹/INR to buy this coins
+            (enter number only)
+          </p>
+        </div>
+
+        <div class="h-empty"></div>
+
+        <div class="card-s1b">
+          <input
+            type="number"
+            name="buy-coins"
+            id="buy-coins"
+            width="100%"
+            placeholder="₹ 10000"
+            autofocus
+          />
+        </div>
+      </div>
+
+      <div class="v-empty"></div>
+
+      <div class="card-s2-flex">
+        <div class="s2a">
+          <input
+            type="number"
+            name="buy-at-price"
+            id="buy-at-price"
+            placeholder="BUY AT PRICE"
+          />
+        </div>
+
+        <div class="s2b">
+          <input
+            type="number"
+            name="sell-at-price"
+            id="sell-at-price"
+            placeholder="SELL AT PRICE"
+          />
+        </div>
+      </div>
+
+      <div class="card-s3-flex">
+        <div class="s3a">
+          <p>Trading Fess</p>
+        </div>
+        <div class="s3b">
+          <select id="fees">
+            <option value="0.1">0.1% - Trading fees</option>
+            <option value="0.2">0.2% - Trading fees</option>
+          </select>
+          <p class="lable">
+            Select WRX as default to pay for fees and get 50% off on trading
+            fess 0.1%/trade. <a href="#"> read more</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="v-empty"></div>
+
+      <div class="card-s4-wraper">
+        <div class="card-s4-info-flex">
+          <div class="s4a">
+            <p>Total Fees :</p>
+          </div>
+          <div class="s4b">
+            <p><span>₹ </span><span id="total-fees-1">____</span></p>
+            <p id="info">
+              buy fees (<span id="new-buy-fees"></span>) + sell fees (<span
+                id="new-sell-fees"
+              ></span
+              >)
+            </p>
+          </div>
+        </div>
+
+        <div class="card-s4-info-flex">
+          <div class="s4a">
+            <p>Profit :</p>
+          </div>
+          <div class="s4b">
+            <p><span>₹ </span><span id="profit-with-fess">____</span></p>
+            <p id="info">
+              buy trade (<span id="buy-coins-1"></span>) - sell trade (<span
+                id="sell-coins"
+              ></span
+              >)
+            </p>
+          </div>
+        </div>
+
+        <div class="card-s4-info-flex">
+          <div class="s4a">
+            <p>Net Profit :</p>
+          </div>
+          <div class="s4b">
+            <p><span>₹ </span><span id="net-profit-1">____</span></p>
+            <p id="info">
+              Profit (<span id="profit-with-fess-2"></span>) - total fees (<span
+                id="total-fees-2"
+              ></span
+              >)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-s5-deatils-flex">
+        <h3>Tarde Details</h3>
+
+        <div class="deatils-flex">
+          <div class="deatils1">
+            <p>Coins : <span id="total-coins">____</span></p>
+            <p>
+              Buy trade : <span> ₹ </span><span id="buy-coins-2">____</span>
+            </p>
+            <p>
+              Sell trade : <span> ₹ </span><span id="sell-coins-2">____</span>
+            </p>
+            <p>
+              Total Fees : <span> ₹ </span><span id="total-fees-3">____</span>
+            </p>
+            <p>
+              Trading Fees % :<span> ₹ </span>
+              <span id="trading-fees">0.1</span>
+            </p>
+          </div>
+
+          <div class="deatils2">
+            <p>Buy coins at : <span id="buy-atp">____</span></p>
+            <p>Sell coins at : <span id="sell-atp">____</span></p>
+            <p>
+              Profit/coin : <span> ₹ </span
+              ><span id="profit-per-coin">____</span>
+            </p>
+            <p>
+              Profit : <span> ₹ </span><span id="profit-with-fess-3">____</span>
+            </p>
+            <p>
+              Net Profit : <span> ₹ </span><span id="net-profit-2">____</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="reload">
+      <img src="/New/reloading.png" alt="reload" />
+    </div>
+
+    <div class="v-empty"></div>
+
+    <div class="v-empty"></div>
+
+    <div class="v-empty"></div>
+
+    <footer>
+      <p>
+        created by:
+        <a
+          href="https://sagarjaid.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >sagar jaid</a
+        >
+      </p>
+    </footer>
+
+    <script src="/New/index.js"></script>
+  </body>
+</html>
